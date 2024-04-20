@@ -8,7 +8,7 @@ import SignUp from './Pages/SignUp';
 import { LogIn } from './Pages/LogIn';
 import AuthRoute from './Routes/AuthRoutes';
 import ProtectedRoute from './Routes/ProtectedRoutes';
-import  Home  from './Pages/Home';
+import Home from './Pages/Home';
 import Services from './Pages/Services';
 import Contact from './Pages/Contact';
 import AboutUs from './Pages/AboutUs';
@@ -21,11 +21,11 @@ function App() {
   return (
     <>
       <Routes>
-      <Route element={<AuthRoute/>}>
-      <Route index element={<SignUp />} />
-      <Route path="/login" element={<LogIn />} />
-      </Route>
-     {/* <Route element={<ProtectedRoute/>}>
+        <Route element={<AuthRoute />}>
+          <Route index element={<SignUp />} />
+          <Route path="/login" element={<LogIn />} />
+        </Route>
+        {/* <Route element={<ProtectedRoute/>}>
         <Route path="/home">
             <Route index element={<Home />} />
              <Route path='DetailedPg/:id' element={<DetailedPg/>}/>
@@ -35,7 +35,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Route>  */}
 
-<Route
+        <Route
           path="/"
           element={<ProtectedRoute />}
         >
@@ -48,20 +48,20 @@ function App() {
         </Route>
 
 
-    </Routes>
+      </Routes>
       <ToastContainer
-      position="top-right"
-      autoClose={5000}
-      hideProgressBar={false}
-      newestOnTop={false}
-      closeOnClick
-      rtl={false}
-      pauseOnFocusLoss
-      draggable
-      pauseOnHover
-      theme="light"
-     />
-     <ToastContainer />
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
+      <ToastContainer />
     </>
   )
 }
