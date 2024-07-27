@@ -1,10 +1,11 @@
 // AboutUs.js
 import React from 'react';
 import { Container, Typography, Box, Grid, Paper } from '@mui/material';
-
+import Navbar from '../Components/Navbar';
 const AboutUs = () => {
   return (
     <Container maxWidth="md">
+       <Navbar />
       <Box sx={{ my: 4 }}>
         <Typography variant="h4" component="h1" gutterBottom>
           About Us
