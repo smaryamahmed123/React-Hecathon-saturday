@@ -1,10 +1,11 @@
 // ContactUs.js
 import React from 'react';
 import { Container, TextField, Button, Grid, Typography, Box } from '@mui/material';
-
+import Navbar from '../Components/Navbar';
 const Contact = () => {
   return (
     <Container maxWidth="sm">
+       <Navbar />
       <Box sx={{ my: 4 }}>
         <Typography variant="h4" component="h1" gutterBottom>
           Contact Us
